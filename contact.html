@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexonic Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=DM+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('photos/bg_for_hme.jpg') no-repeat center center/cover;
+      margin: 0;
+      padding: 0;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    header {
+      background-color: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #e0000b9a;
+      font-size: 1.8rem;
+      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+   nav a {
+  color: #e0000b9a; 
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white; 
+}
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      color: white;
+      padding: 3rem 2rem;
+      gap: 2rem;
+    }
+
+    .contact-info, .contact-form-container {
+      flex: 1 1 400px;
+      background-color: rgba(255,255,255,0.05);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #e0000b9a;
+    }
+
+    .contact-info p {
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-item i {
+      font-size: 1.5rem;
+      color: #e0000b9a;
+      min-width: 30px;
+    }
+
+    .info-item h4 {
+      margin: 0;
+      font-size: 1rem;
+      color: #e0000b9a;
+    }
+
+    .info-item a {
+      color: rgb(37, 15, 161);
+      text-decoration: none;
+    }
+
+    .info-item a:hover {
+      color: #2e20ad9a;
+    }
+
+    .contact-form h3 {
+      margin-bottom: 1.5rem;
+      color: #e0000b9a;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background: #e0000b9a;
+      color: white;
+      border: none;
+      padding: 0.9rem 1.5rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #c0000b80;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="header-container">
+      <div class="logo">Nexonic Store</div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="index.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>For inquiries about our electronic products, website support, or your order status, please don’t hesitate to reach out. Our team is ready to assist you.</p>
+
+     <div class="info-item">
+  <i class="fas fa-map-marker-alt"></i>
+  <div>
+    <h4>Address</h4>
+    <p>
+      <a href="https://www.google.com/maps?q=Mall+of+Arabia,+Gate+21,+Juhayna+Square,+6th+of+October,+Giza" target="_blank">
+        Nexonic Store – Gate No.21, Mall of Arabia, Juhayna Square, 6th of October City, Giza, Egypt
+      </a>
+    </p>
+  </div>
+</div>
+
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+2016504">+20 16504</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:info@nexonicstore.com">info@nexonicstore.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <h3>Send Message</h3>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Type your Message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+

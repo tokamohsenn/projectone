@@ -1,0 +1,282 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fffaf4;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff8a5c;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #ff8a5c;
+}
+
+
+.hero {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 250, 244, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ff8a5c;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff8a5c;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e66f3e;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+  color: #888;
+  position: relative;
+  z-index: 2;
+  margin-top: -80px;
+}
+
+.products-section {
+  padding: 100px 60px 60px;
+  background-color: #fffaf4;
+  color: #333;
+  min-height: 100vh;
+}
+
+.products-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ff8a5c;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff8a5c;
+  font-size: 18px;
+}
+
+
+.new-contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px 50px;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.new-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,250,244, 0.3); 
+  z-index: -1;
+}
+
+.form-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-card h2 {
+  color: #ff8a5c;
+  margin-bottom: 10px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-card input,
+.form-card textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fefefe;
+}
+
+.form-card button {
+  background-color: #ff8a5c;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-card button:hover {
+  background-color: #e66f3e;
+}
+
+.contact-info {
+  margin-top: 25px;
+}
+
+.contact-info a {
+  color: #ff8a5c;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+.new-faq {
+  max-width: 800px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.new-faq h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #ff8a5c;
+  margin-bottom: 30px;
+}
+
+.faq-box {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.faq-box h4 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.faq-box p {
+  color: #666;
+}
